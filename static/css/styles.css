@@ -1,0 +1,49 @@
+body {
+  background-color: #a7c5eb;
+}
+
+.register-form {
+  padding-top: 150px;
+}
+
+#navbar_ {
+  display: flex;
+  position: absolute;
+  right: 20;
+  color: #343434;
+
+}
+
+.nav-item {
+  display: inline;
+  padding-top: 10px;
+}
+.navbar {
+  color: #343a40;
+  background-color: #f05454;
+
+}
+
+.navbar-brand  {
+  color: #343a40;
+  background-color: #f05454;
+
+}
+
+.navbar-nav li a{
+  color: #343a40;
+}
+
+#add, #delete {
+  padding: 9px
+}
+
+.fa {
+  font-size: 18px;
+}
+
+
+nav {
+  font-weight: 600;
+  font-size: 18px;
+}

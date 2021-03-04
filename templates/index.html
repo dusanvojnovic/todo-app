@@ -1,0 +1,22 @@
+{% extends 'bootstrap/base.html' %}
+{% include "header.html" %}
+
+{% block content %}
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/styles.css') }}">
+
+
+{% if current_user.is_authenticated %}
+<h1 style="text-align:center; font-size:20px; font-weight:bold; margin-top: 15px; color:#343a40">{{ current_user.username }}'s List</h1>
+{% include 'todo_list.html' %}
+
+{% else %}
+
+<div class="container" style="display:flex; justify-content:center; text-align: center; padding-top: 180px;" >
+    <div>
+        <h1>Need help to keep track of obligations during the day?</h1>
+        <h2>Create free account, and make your TODO List!</h2>
+        
+    </div>
+</div>
+{% endif %}
+{% endblock %}
